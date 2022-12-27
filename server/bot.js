@@ -113,26 +113,6 @@ export const botTele = () => {
                   .sendMessage(msg.chat.id, JSON.stringify(error))
                   .catch((err) => console.log(err));
             });
-         //    new Promise((resolve, reject) => {
-         //       try {
-         //          resolve(openAiDate(prompt));
-         //       } catch (error) {
-         //          reject(error);
-         //       }
-         //    }),
-         // ])
-         //    .then(async (data) => {
-         //       return await bot.sendMessage(msg.chat.id, data[0], {
-         //          replyToMessage:
-         //             msg.chat.type == "supergroup" && msg.message_id,
-         //       });
-         //    })
-         //    .catch((error) => {
-         //       return bot.sendMessage(msg.chat.id, error, {
-         //          replyToMessage:
-         //             msg.chat.type == "supergroup" && msg.message_id,
-         //       });
-         //    });
       }
    });
 
