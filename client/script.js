@@ -75,7 +75,7 @@ const handleSubmit = async e => {
 
   loader(messageDiv)
 
-  const response = await fetch("https://chatgpt-6938.onrender.com/", {
+  const response = await fetch("https://tabby-honorable-save.glitch.me/", {
      method: "POST",
      headers: {
         "Content-Type": "application/json",
