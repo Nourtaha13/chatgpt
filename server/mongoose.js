@@ -9,16 +9,14 @@ const Schema = mongoose.Schema(
       },
       username: {
          type: String,
-         required: true,
       },
       name: {
          type: String,
-         required: true,
       },
       messages: {
          type: Array,
          default: [],
-         required: true,
+         
       },
    },
    {
