@@ -23,7 +23,7 @@ for developer : @Noureldin13`,
          } catch (error) {
             bot.sendMessage(msg.chat.id, JSON.stringify(error), {
                replyToMessage: msg.message_id,
-            });
+            }).catch(err => console.log(err));
          }
       });
    });
@@ -54,14 +54,14 @@ for developer : @Noureldin13`,
             try {
                bot.sendMessage(msg.chat.id, "Wait ..", {
                   replyToMessage: msg.message_id,
-               });
+               }).catch(err => console.log(err));
                bot.sendMessage(msg.chat.id, await openAiDate(prompt), {
                   replyToMessage: msg.message_id,
-               });
+               }).catch(err => console.log(err));
             } catch (error) {
                bot.sendMessage(msg.chat.id, JSON.stringify(error), {
                   replyToMessage: msg.message_id,
-               });
+               }).catch(err => console.log(err));
             }
          });
       }
@@ -73,14 +73,14 @@ for developer : @Noureldin13`,
          try {
             bot.sendMessage(msg.chat.id, "Wait ..", {
                replyToMessage: msg.message_id,
-            });
+            }).catch(err => console.log(err));
             bot.sendMessage(msg.chat.id, await openAiDate(prompt), {
                replyToMessage: msg.message_id,
-            });
+            }).catch(err => console.log(err));
          } catch (error) {
             bot.sendMessage(msg.chat.id, JSON.stringify(error), {
                replyToMessage: msg.message_id,
-            });
+            }).catch(err => console.log(err));
          }
       });
    });
