@@ -75,7 +75,7 @@ const handleSubmit = async e => {
 
   loader(messageDiv)
 
-  const response = await fetch("https://tabby-honorable-save.glitch.me/", {
+  const response = await fetch("https://app-2e849ac0-81b9-4126-8ac4-3103020d1666.cleverapps.io", {
      method: "POST",
      headers: {
         "Content-Type": "application/json",
