@@ -92,11 +92,12 @@ body {
   font-size: 20px;
   max-width: 100%;
   overflow-x: scroll;
-  white-space: pre-wrap; 
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
+.ai .message{
+    white-space: pre-wrap; 
+}
 /* hides scrollbar */
 .message::-webkit-scrollbar {
   display: none;
