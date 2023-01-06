@@ -1,9 +1,9 @@
 import TeleBot from "telebot";
 import { openAiDate } from "./openai.js";
-import { connect } from "./config.js";
+
 import Model from "./mongoose.js";
 export const botTele = async () => {
-   connect();
+
    const token = process.env.TELEBOT_TOKEN;
    const bot = new TeleBot(token);
    await bot.on("/start", async (msg) => {
