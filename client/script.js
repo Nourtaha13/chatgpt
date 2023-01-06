@@ -3,7 +3,7 @@ import user from "./assets/user.svg"
 
 const form = document.querySelector("form")
 const chatContainer = document.querySelector("#chat_container")
-
+const count = document.querySelector(".count")
 let loadInterval;
 
 function loader (element) {
@@ -90,6 +90,7 @@ const handleSubmit = async e => {
     const data = await response.json()
     const parsedData =  data.bot.trim()
     await typeText(messageDiv, parsedData)
+    count.innerHTML = `<p>Count of requests : ${data.views}</p>`
   } else {
     const err = await response.text()
     messageDiv.innerHTML = "Something went wrong"
