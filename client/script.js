@@ -75,7 +75,7 @@ const handleSubmit = async e => {
 
   loader(messageDiv)
 
-  const response = await fetch("https://app-928f48ae-a292-4346-b6e5-cc50fb03bfd7.cleverapps.io/", {
+  const response = await fetch("https://app-143e5327-467f-4195-82e9-8f44a0dac273.cleverapps.io/", {
      method: "POST",
      headers: {
         "Content-Type": "application/json",
